@@ -1,4 +1,5 @@
 import chalk from "chalk"
+import dedent from "dedent-js"
 const printError = (error) => {
   console.log(chalk.bgRed(" ERROR ") + " " + `Error` + " " + error)
 }
@@ -9,7 +10,7 @@ const printSuccess = (message) => {
 
 const printHelp = () => {
   console.log(
-    `${chalk.bgCyan(" HELP ")} 
+    dedent`${chalk.bgCyan(" HELP ")} 
     Without parameters-weather input
     -s [CITY] - get weather for city
     -h - get help
